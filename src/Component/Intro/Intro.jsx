@@ -2,9 +2,7 @@ import React from 'react';
 import Github from '../../assets/github.png';
 import Linkedin from '../../assets/linkedin.png';
 import Instegram from '../../assets/instagram.png';
-import vector1 from '../../assets/Vector1.png';
-import vector2 from '../../assets/Vector2.png';
-import boy from '../../assets/boy.png';
+import personal from '../../assets/personal.png'
 
 import './intro.css';
 
@@ -36,9 +34,7 @@ const Intro = () => {
         </div>
       </article>
       <article className="intro-right">
-        <img src={vector1} alt="" />
-        <img src={vector2} alt="" />
-        <img src={boy} alt="" />
+        <img src={personal} alt="" />
       </article>
     </section>
   );

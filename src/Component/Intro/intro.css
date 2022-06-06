@@ -8,7 +8,7 @@
   flex-direction: column;
   position: relative;
   flex: 1;
-  gap: 2rem;
+  gap: 4rem;
 }
 .intro-name {
   display: flex;
@@ -50,28 +50,15 @@
 .intro-icons > *:hover {
   cursor: pointer;
 }
-.intro-right{
-    flex: 1;
-    position: relative;
-    top: -12%;
+.intro-right {
+  flex: 1;
+  position: relative;
+  top: -12%;
 }
-.intro-right>*{
-    position: absolute;
-    z-index: 1;
+.intro-right > * {
+  position: absolute;
 }
-.intro-right>:nth-child(1){
-    transform: scale(.70);    
-    left: -15%;
-    top: -9%;
-}
-.intro-right>:nth-child(2){
-    top: -4.6%;
-    transform: scale(.67);
-    left: -3rem;
-}
-.intro-right>:nth-child(3){
-    transform: scale(.25);
-    right: -28%;
-    top: -160%;
-    
+.intro-right > :nth-child(1) {
+  transform: scale(0.80);
+  top: -15%;
 }
