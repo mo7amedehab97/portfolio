@@ -28,7 +28,7 @@
 .intro-name > :nth-child(3) {
   font-weight: 100;
   font-size: 0.8rem;
-  color: var(--gery);
+  color: var(--gary);
   margin-top: 0.625rem;
 }
 .intro-button {
