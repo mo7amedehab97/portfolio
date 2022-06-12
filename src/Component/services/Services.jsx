@@ -20,10 +20,6 @@ const Services = () => {
         <a href={Resume} download>
           <button className="button services-btn"> Download Cv</button>
         </a>
-        <div
-          className="blur services-blur1"
-          style={{ background: '#ABF1FF94' }}
-        ></div>
       </div>
       <div className="right-services">
         <div>
