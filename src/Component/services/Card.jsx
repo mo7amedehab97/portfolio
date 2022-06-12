@@ -6,7 +6,7 @@ const Card = ({ emoji, heading, detail }) => {
     <div className="card">
       <img src={emoji} />
       <span>{heading}</span>
-      <span>{detail}</span>
+          <span>{detail}</span>
     </div>
   );
 };

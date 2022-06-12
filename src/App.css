@@ -30,3 +30,7 @@
   border: 1px solid var(--orange);
   color: var(--orange);
 }
+a{
+  text-decoration: none;
+  color: var(--black);
+}

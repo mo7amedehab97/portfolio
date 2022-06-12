@@ -1,14 +1,15 @@
 .intro {
   display: flex;
-  height: 77vh;
-  margin-top: 6rem;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .intro-left {
   display: flex;
   flex-direction: column;
   position: relative;
   flex: 1;
-  gap: 4rem;
+  gap: 2rem;
+  margin-top: 3rem;
 }
 .intro-name {
   display: flex;
@@ -28,7 +29,7 @@
 .intro-name > :nth-child(3) {
   font-weight: 100;
   font-size: 0.8rem;
-  color: var(--gary);
+  color: var(--gery);
   margin-top: 0.625rem;
 }
 .intro-button {
@@ -45,20 +46,19 @@
 }
 .intro-icons > * {
   transform: scale(0.5);
-  margin-top: -3rem;
+  margin-top: -4rem;
 }
 .intro-icons > *:hover {
   cursor: pointer;
 }
+
 .intro-right {
+  display: flex;
+  justify-content: right;
+  align-items: center;
   flex: 1;
-  position: relative;
-  top: -12%;
+  margin-top: 4rem;
 }
-.intro-right > * {
-  position: absolute;
-}
-.intro-right > :nth-child(1) {
-  transform: scale(0.80);
-  top: -15%;
+.intro-right > img {
+  max-width: 25rem;
 }
