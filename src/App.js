@@ -1,9 +1,9 @@
 import './App.css'
-import Experience from './Component/Intro/Experience/Experience'
+import Experience from './Component/Experience/Experience'
 import Intro from './Component/Intro/Intro'
 import Navbar from './Component/Navbar/Navbar.jsx'
+import Projects from './Component/Projects/Projects'
 import Services from './Component/services/Services'
-import Works from './Component/Works/Works'
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Intro />
       <Services />
       <Experience />
-      <Works />
+      <Projects />
     </div>
   )
 }

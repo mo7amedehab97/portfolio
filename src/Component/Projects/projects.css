@@ -1,0 +1,20 @@
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem;
+}
+.project-header span:nth-child(1){
+    color: var(--black);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.project-header span:nth-child(2){
+    color: var(--orange);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.projects .swiper{
+border-radius: 1rem;    
+}

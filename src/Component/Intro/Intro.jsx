@@ -15,7 +15,8 @@ const Intro = () => {
           <span>Mohamed Hells</span>
           <span>
             Fullstack Developer with high level of experince in web designing
-            and development producting the quality work
+            and development producting the quality work, and with experience in 
+            building unbreakable and elegant JavaScript websites
           </span>
         </div>
         <div className="hire-me">
