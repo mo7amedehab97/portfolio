@@ -7,6 +7,7 @@ import Tashteeb from '../../assets/tashteeb.png';
 import 'swiper/css';
 import Eye from '../../assets/eye.png';
 import Gith from '../../assets/gith.png';
+import Reddit from '../../assets/reddit.png';
 
 const Projects = () => {
   return (
@@ -15,7 +16,6 @@ const Projects = () => {
         <span>Most Recent </span>
         <span>Projects</span>
       </div>
-      {/* slider */}
       <Swiper
         spaceBetween={30}
         slidesPerView={3}
@@ -25,10 +25,22 @@ const Projects = () => {
         <SwiperSlide>
           <div className="preview">
             <span>
-              <img src={Eye} alt="" />
+              <a
+                href="https://tash6eeb.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={Eye} alt="" />
+              </a>
             </span>
             <span>
-              <img src={Gith} alt="" />{' '}
+              <a
+                href="https://github.com/GSG-G11/Tashteeb"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={Gith} alt="" />{' '}
+              </a>
             </span>
           </div>
           <img src={Tashteeb} alt="tashteeb website" />
@@ -36,35 +48,71 @@ const Projects = () => {
         <SwiperSlide>
           <div className="preview">
             <span>
-              <img src={Eye} alt="" />
+              <a
+                href="https://imaginative-crisp-6a6d5b.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={Eye} alt="" />
+              </a>
             </span>
             <span>
-              <img src={Gith} alt="" />{' '}
+              <a
+                href="https://github.com/GSG-G11/pokimony"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={Gith} alt="" />{' '}
+              </a>
             </span>
           </div>
-          <img src={Pokimony} alt="tashteeb website" />
+          <img src={Pokimony} alt="Pokimony website" />
         </SwiperSlide>
         <SwiperSlide>
           <div className="preview">
             <span>
-              <img src={Eye} alt="" />
+              <a
+                href="https://fresh-pet.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={Eye} alt="" />
+              </a>
             </span>
             <span>
-              <img src={Gith} alt="" />{' '}
+              <a
+                href="https://github.com/GSG-G11/fresh-pet"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={Gith} alt="" />{' '}
+              </a>
             </span>
           </div>
-          <img src={FreshPet} alt="tashteeb website" />
+          <img src={FreshPet} alt="FreshPet website" />
         </SwiperSlide>{' '}
         <SwiperSlide>
           <div className="preview">
             <span>
-              <img src={Eye} alt="" />
+              <a
+                href="https://reddit-mo7amed.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={Eye} alt="" />
+              </a>
             </span>
             <span>
-              <img src={Gith} alt="" />{' '}
+              <a
+                href="https://github.com/GSG-G11/mo7amed-reddit"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={Gith} alt="" />{' '}
+              </a>
             </span>
           </div>
-          <img src={FreshPet} alt="tashteeb website" />
+          <img src={Reddit} alt="Reddit website" />
         </SwiperSlide>
       </Swiper>
     </div>
