@@ -1,21 +1,24 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { themeContext } from '../../Context';
 import Github from '../../assets/github.png';
 import Linkedin from '../../assets/linkedin.png';
 import Instegram from '../../assets/instagram.png';
-import personal from '../../assets/personal.png'
+import personal from '../../assets/personal.png';
 
 import './intro.css';
 
 const Intro = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <section className="intro">
       <article className="intro-left">
         <div className="intro-name">
-          <span>Hey I'm </span>
+          <span style={{ color: darkMode ? 'white' : '' }}>Hey I'm </span>
           <span>Mohamed Hells</span>
           <span>
             Fullstack Developer with high level of experince in web designing
-            and development producting the quality work, and with experience in 
+            and development producting the quality work, and with experience in
             building unbreakable and elegant JavaScript websites
           </span>
         </div>

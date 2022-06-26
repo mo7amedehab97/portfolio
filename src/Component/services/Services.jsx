@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { themeContext } from '../../Context';
 import './services.css';
 import Figma from '../../assets/figma.png';
 import ReactIcon from '../../assets/react.png';
@@ -7,10 +8,12 @@ import Card from './Card';
 import Resume from '../../assets/mohamed-helles.pdf';
 
 const Services = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className="services">
       <div className="left-services">
-        <span>My Awesome</span>
+        <span style={{ color: darkMode ? 'white' : '' }}>My Awesome</span>
         <span>Services</span>
         <span>
           Lorem ipsum dolor sit amet consectetur adipisicing elit

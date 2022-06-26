@@ -1,12 +1,16 @@
 import React from 'react';
+import Toggle from '../Toggle/Toggle';
 import './navbar.css';
+
 
 const Navbar = () => {
   return (
     <nav className="nav-holder">
       <section className="nav-left">
         <div className="nav-name">Mohamed Helles</div>
-        <span>toggle</span>
+        <span>
+          <Toggle />
+        </span>
       </section>
       <section className="nav-right">
         <div className="nav-list">

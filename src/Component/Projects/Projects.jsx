@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { themeContext } from '../../Context';
 import FreshPet from '../../assets/freshPet.png';
 import './projects.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -10,10 +11,12 @@ import Gith from '../../assets/gith.png';
 import Reddit from '../../assets/reddit.png';
 
 const Projects = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className="projects">
       <div className="project-header">
-        <span>Most Recent </span>
+        <span style={{ color: darkMode ? 'white' : '' }}>Most Recent </span>
         <span>Projects</span>
       </div>
       <Swiper
