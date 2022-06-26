@@ -21,7 +21,7 @@
   color: #fff;
   font-size: 1rem;
   padding: 11px 26px 11px 26px;
-  transition: all 1.5s ease-out ;
+  transition: all 1.5s ease-out;
   background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
 }
 .button:hover {
@@ -30,7 +30,13 @@
   border: 1px solid var(--orange);
   color: var(--orange);
 }
-a{
+a {
   text-decoration: none;
   color: var(--black);
+}
+
+@media screen and (max-width: 480px) {
+  .App {
+    padding: 0.5rem 1rem;
+  }
 }

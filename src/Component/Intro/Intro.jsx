@@ -6,13 +6,20 @@ import Instegram from '../../assets/instagram.png';
 import personal from '../../assets/personal.png';
 
 import './intro.css';
+import { motion } from 'framer-motion';
 
 const Intro = () => {
+  const transition = { duration: 2, type: 'spring' };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
     <section className="intro">
-      <article className="intro-left">
+      <motion.article
+        className="intro-left"
+        initial={{ left: '-50%' }}
+        whileInView={{ left: '0%' }}
+        transition={transition}
+      >
         <div className="intro-name">
           <span style={{ color: darkMode ? 'white' : '' }}>Hey I'm </span>
           <span>Mohamed Hells</span>
@@ -36,7 +43,7 @@ const Intro = () => {
             <img src={Linkedin} alt="Linkedin icon" />
           </a>
         </div>
-      </article>
+      </motion.article>
       <article className="intro-right">
         <img src={personal} alt="" />
       </article>

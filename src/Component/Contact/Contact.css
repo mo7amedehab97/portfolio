@@ -46,15 +46,40 @@
 textarea {
   height: 4rem !important;
 }
+.dark {
+  width: 100px;
+  height: 100px;
+  background-color: var(--orange);
+  border-start-end-radius: 100%;
+  position: absolute;
+  top: -10%;
+  left: 0;
+  z-index: -1;
+}
+.yellow {
+  width: 100px;
+  height: 100px;
+  background-color: var(--black);
+border-bottom-left-radius: 100%;
+  position: absolute;
+  bottom:-28%;
+  left: 0;
 
+  z-index: -1;
+
+}
 
 @media screen and (max-width: 480px) {
   .contact-form {
     padding: 0;
     flex-direction: column;
     gap: 2rem;
+    margin-bottom: 2.5rem;
   }
   .c-right .user {
     width: 16rem;
+  }
+  .dark , .yellow{
+    display: none;
   }
 }

@@ -4,7 +4,10 @@ import { themeContext } from '../../Context';
 import emailjs from '@emailjs/browser';
 import { success, error } from '../Messages/Messages';
 import './Contact.css';
+import { motion } from 'framer-motion';
+
 const Contact = () => {
+  const transition = { duration: 2, type: 'spring' };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
@@ -33,10 +36,17 @@ const Contact = () => {
   return (
     <div className="contact-form" id="contact">
       <div className="w-left">
-        <div className="awesome">
+        <motion.div
+          className="awesome"
+          initial={{ left: '-60%' }}
+          whileInView={{ left: '-5%' }}
+          transition={transition}
+        >
           <span style={{ color: darkMode ? 'white' : '' }}>Get in Touch</span>
           <span>Contact me</span>
-        </div>
+          <div className="dark"></div>
+          <div className="yellow"></div>
+        </motion.div>
       </div>
       {/* right side form */}
       <div className="c-right">

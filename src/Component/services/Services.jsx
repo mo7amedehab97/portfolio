@@ -6,13 +6,20 @@ import ReactIcon from '../../assets/react.png';
 import NodeIcon from '../../assets/node.png';
 import Card from './Card';
 import Resume from '../../assets/mohamed-helles.pdf';
+import { motion } from 'framer-motion';
 
 const Services = () => {
+  const transition = { duration: 2, type: 'spring' };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
     <div className="services">
-      <div className="left-services">
+      <motion.div
+        className="left-services"
+        initial={{ right: '30%' }}
+        whileInView={{ left: '0%' }}
+        transition={transition}
+      >
         <span style={{ color: darkMode ? 'white' : '' }}>My Awesome</span>
         <span>Services</span>
         <span>
@@ -23,7 +30,7 @@ const Services = () => {
         <a href={Resume} download>
           <button className="button services-btn"> Download Cv</button>
         </a>
-      </div>
+      </motion.div>
       <div className="right-services">
         <div>
           <Card

@@ -16,7 +16,7 @@
   font-weight: bold;
 }
 .projects .swiper {
-  overflow: visible !important;
+  overflow: hidden !important;
 }
 
 .project-slider {

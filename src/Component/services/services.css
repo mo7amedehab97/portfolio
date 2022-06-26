@@ -71,5 +71,22 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  /* margin-top: 1rem; */
+}
+@media screen and (max-width: 480px) {
+  .services {
+    margin-top: 0;
+    flex-direction: column;
+  }
+
+  .right-services {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  .card {
+    max-width: 20rem;
+  }
+  .card > * {
+    position: static;
+  }
 }

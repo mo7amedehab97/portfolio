@@ -15,10 +15,9 @@
   margin-top: 7rem;
   gap: 4rem;
   color: var(--black);
-
 }
-.f-content span{
-      font-size: 1.5rem;
+.f-content span {
+  font-size: 1.5rem;
   font-weight: 300;
 }
 .f-icons {
@@ -28,6 +27,14 @@
 
 @media screen and (max-width: 480px) {
   .f-content {
-    transform: scale(0.5);
+    margin-top: 4rem;
+    gap: 0rem;
+  }
+  .f-content span {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .f-icons {
+    transform: scale(0.7);
   }
 }

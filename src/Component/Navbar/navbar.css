@@ -1,6 +1,6 @@
 .nav-holder {
   display: flex;
-  height: 10vh;
+  height: 60px;
   justify-content: space-between;
 }
 .nav-left {
@@ -15,28 +15,42 @@
 }
 .nav-right {
   display: flex;
-  flex: 1;
   align-items: center;
   justify-content: center;
   font-weight: 400;
 }
+
 .nav-list {
-  flex: 10;
-}
-.nav-list > ul {
   display: flex;
-  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 4rem;
 }
-.nav-list > ul > li:hover {
+.nav-list > *:hover {
   cursor: pointer;
   color: var(--orange);
   transition: all 1s ease-out;
 }
-.nav-list > ul > li {
-  list-style-type: none;
+
+.btn-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.nav-button {
-  flex: 2;
+@media screen and (max-width: 480px) {
+  .nav-list {
+    display: none;
+  }
+  .btn-holder button {
+    display: none;
+  }
+  .toggle-holder {
+    margin-left: 4rem;
+  }
 }
-/* create */
