@@ -1,8 +1,10 @@
 import './App.css'
+import Contact from './Component/Contact/Contact'
 import Experience from './Component/Experience/Experience'
+import Footer from './Component/Footer/Footer'
 import Intro from './Component/Intro/Intro'
 import Navbar from './Component/Navbar/Navbar.jsx'
-import Portfolio from './Component/Projects/Projects'
+import Projects from './Component/Projects/Projects'
 import Services from './Component/services/Services'
 
 function App() {
@@ -12,7 +14,9 @@ function App() {
       <Intro />
       <Services />
       <Experience />
-      <Portfolio />
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
   )
 }
