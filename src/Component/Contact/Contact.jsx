@@ -1,11 +1,9 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-
+import { success, error } from '../Messages/Messages';
 import './Contact.css';
-
 const Contact = () => {
   const form = useRef();
-  const [done, setDone] = useState(false);
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -18,11 +16,12 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          setDone(true);
-          form.reset();
+          document.getElementsByClassName('form')[0].reset();
+          success('your respoense was sent ');
         },
-        (error) => {
-          console.log(error.text);
+        (err) => {
+          error(err.text);
+          console.log(err.text);
         },
       );
   };
@@ -36,13 +35,8 @@ const Contact = () => {
       </div>
       {/* right side form */}
       <div className="c-right">
-        <form ref={form} onSubmit={sendEmail}>
-          <input
-            type="text"
-            name="name"
-            className="user"
-            placeholder="Name"
-          />
+        <form ref={form} onSubmit={sendEmail} className="form">
+          <input type="text" name="name" className="user" placeholder="Name" />
           <input
             type="email"
             name="email"
@@ -51,7 +45,6 @@ const Contact = () => {
           />
           <textarea name="message" className="user" placeholder="Message" />
           <input type="submit" value="Send" className="button" />
-          <span>{done && 'Thanks for Contacting me'}</span>
         </form>
       </div>
     </div>

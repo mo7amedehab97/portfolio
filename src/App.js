@@ -1,4 +1,3 @@
-import './App.css'
 import Contact from './Component/Contact/Contact'
 import Experience from './Component/Experience/Experience'
 import Footer from './Component/Footer/Footer'
@@ -6,6 +5,8 @@ import Intro from './Component/Intro/Intro'
 import Navbar from './Component/Navbar/Navbar.jsx'
 import Projects from './Component/Projects/Projects'
 import Services from './Component/services/Services'
+import 'antd/dist/antd.css'
+import './App.css'
 
 function App() {
   return (
